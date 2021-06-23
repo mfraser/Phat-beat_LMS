@@ -12,6 +12,12 @@ sc.connect()
 
 sq = sc.get_player("b8:27:eb:3c:1b:be")
 
+phatbeat.set_all(0,128,0,0.1)
+phatbeat.show()
+time.sleep(1)
+phatbeat.clear()
+phatbeat.show()
+	
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP)
